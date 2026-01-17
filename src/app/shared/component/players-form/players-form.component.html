@@ -5,38 +5,44 @@
 
       <div class="form-group mb-4">
         <label class="form-label">
-         <h3> ⚽ <strong>Player Name</strong></h3>
+          <h3> ⚽ <strong>Player Name</strong></h3>
         </label>
         <input type="text" class="form-control form-input" name="name" ngModel required placeholder="Enter player name">
       </div>
 
       <div class="form-group mb-4">
         <label class="form-label">
-         <h3> 🧩 <strong>Position / Content</strong></h3>
+          <h3> 🧩 <strong>Position</strong></h3>
         </label>
-        <input type="text" class="form-control form-input" name="position" ngModel required
+        <input type="position" class="form-control form-input" name="position" ngModel required
           placeholder="e.g. Forward, Midfielder">
       </div>
-
+      
       <div class="form-group mb-4">
         <label class="form-label">
           <h3>🏆 <strong>Trophies</strong></h3>
         </label>
-        <input type="number" class="form-control form-input" name="trophies" ngModel required
+        <input type="trophies" class="form-control form-input" name="trophies" ngModel required
           placeholder="Total trophies won">
-      </div>
-       <div class="form-group mb-4">
-        <label class="form-label">
-           <strong>content</strong>
+
+           <label class="form-label">
+          <h3>🌍 <strong>Country</strong></h3>
         </label>
-        <input type="text" class="form-control form-input" name="content" ngModel required
-          placeholder="Content">
+        <input type="Country" class="form-control form-input" name="Country" ngModel required
+          placeholder="Country Name">
+      </div>
+      <div class="form-group mb-4">
+        <label class="form-label">
+          <h3><strong>Content</strong></h3>
+        </label>
+        <input type="text" class="form-control form-input" name="content" ngModel required placeholder="Content">
       </div>
     </div>
 
 
     <button *ngIf="!isInEditmode" mat-raised-button class=" btn btn-block mt-2" color="primary">Add Players</button>
-  <button (click)="OnUpdate()" *ngIf="isInEditmode " mat-raised-button class=" btn btn-block mt-2" color="warn">Update Player</button> 
+    <button (click)="OnUpdate()" *ngIf="isInEditmode " mat-raised-button class=" btn btn-block mt-2" color="warn">Update
+      Player</button>
 
   </form>
 </div>
