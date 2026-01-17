@@ -1,0 +1,37 @@
+<div class="container mt-5">
+  <div class="row">
+
+    <!-- FORM -->
+    <div class="col-12 col-md-8">
+      <div class="card shadow-sm p-3">
+        <app-players-form
+          (emitAdd)="AddDefination($event)"
+        [EditedOBJ]="EditedOBJ"
+          (EmitedUpdateobj)="DefinationUpdate($event)"
+          
+          
+          >
+        </app-players-form>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-4">
+      <div class="card shadow-sm p-3 sticky-list">
+        <h5 class="mb-3">Players List</h5>
+
+        <app-players-list
+          [ShowPlayers]="PlayersArr"
+          
+          (editedObj)="EditDefination($event)"
+           (deletedId)="DeleteDefination($event)"
+          
+          
+          >
+        
+        </app-players-list>
+      </div>
+    </div>
+
+  </div>
+</div>

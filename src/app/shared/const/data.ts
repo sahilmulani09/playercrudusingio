@@ -1,0 +1,76 @@
+export const footballPlayers = [
+{
+  id: "M01",
+  name: "Lionel Messi",
+  trophies: 44,
+  position: "Forward",
+  country: "Argentina",
+  content: "Legendary footballer known for dribbling, vision, and playmaking.",
+  
+},
+{
+  id: "F01",
+  name: "Alexia Putellas",
+  trophies: 15,
+  position: "Midfielder",
+  country: "Spain",
+  content: "World-class midfielder famous for control, goals, and leadership.",
+  image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+},
+{
+  id: "F02",
+  name: "Megan Rapinoe",
+  trophies: 12,
+  position: "Winger",
+  country: "USA",
+  content: "Creative winger known for assists, free-kicks, and big-game impact.",
+},
+{
+  id: "F03",
+  name: "Sam Kerr",
+  trophies: 14,
+  position: "Forward",
+  country: "Australia",
+  content: "Fast and powerful striker known for scoring crucial goals.",
+},
+
+ { id: "M02",
+  name: "Cristiano Ronaldo",
+  trophies: 35,
+  position: "Forward",
+  country: "Portugal",
+  content: "Iconic goal scorer famous for strength, speed, and aerial ability.",
+},
+{
+  id: "M03",
+  name: "Kevin De Bruyne",
+  trophies: 20,
+  position: "Midfielder",
+  country: "Belgium",
+  content: "Elite playmaker known for passing accuracy and vision.",
+},
+{
+  id: "M04",
+  name: "Virgil van Dijk",
+  trophies: 12,
+  position: "Defender",
+  country: "Netherlands",
+  content: "Strong and calm defender known for leadership and positioning.",
+},
+{
+  id: "F04",
+  name: "Ada Hegerberg",
+  trophies: 11,
+  position: "Forward",
+  country: "Norway",
+  content: "Clinical striker and one of the best finishers in women’s football.",
+},
+{
+  id: "F05",
+  name: "Lucy Bronze",
+  trophies: 13,
+  position: "Defender",
+  country: "England",
+  content: "Versatile defender known for stamina and attacking support.",
+}
+];

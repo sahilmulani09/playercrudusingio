@@ -1,0 +1,42 @@
+<div class="container">
+  <form #Playersform="ngForm" (ngSubmit)="OnSubmit()">
+
+    <div class="form-card">
+
+      <div class="form-group mb-4">
+        <label class="form-label">
+         <h3> ⚽ <strong>Player Name</strong></h3>
+        </label>
+        <input type="text" class="form-control form-input" name="name" ngModel required placeholder="Enter player name">
+      </div>
+
+      <div class="form-group mb-4">
+        <label class="form-label">
+         <h3> 🧩 <strong>Position / Content</strong></h3>
+        </label>
+        <input type="text" class="form-control form-input" name="position" ngModel required
+          placeholder="e.g. Forward, Midfielder">
+      </div>
+
+      <div class="form-group mb-4">
+        <label class="form-label">
+          <h3>🏆 <strong>Trophies</strong></h3>
+        </label>
+        <input type="number" class="form-control form-input" name="trophies" ngModel required
+          placeholder="Total trophies won">
+      </div>
+       <div class="form-group mb-4">
+        <label class="form-label">
+           <strong>content</strong>
+        </label>
+        <input type="text" class="form-control form-input" name="content" ngModel required
+          placeholder="Content">
+      </div>
+    </div>
+
+
+    <button *ngIf="!isInEditmode" mat-raised-button class=" btn btn-block mt-2" color="primary">Add Players</button>
+  <button (click)="OnUpdate()" *ngIf="isInEditmode " mat-raised-button class=" btn btn-block mt-2" color="warn">Update Player</button> 
+
+  </form>
+</div>
